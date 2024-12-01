@@ -6,7 +6,8 @@
     "strict": true,
     "rootDir": "src",
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "resolveJsonModule": true
   },
   "include": ["src/**/*"]
 }

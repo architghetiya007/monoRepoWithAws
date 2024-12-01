@@ -6,7 +6,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "lambda-function": "workspace:*"
+    "lambda-function": "file:../lambda-function"
   },
   "devDependencies": {
     "typescript": "^5.0.0"

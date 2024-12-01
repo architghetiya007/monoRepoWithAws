@@ -5,10 +5,10 @@
     "outDir": "dist",
     "strict": true,
     "baseUrl": ".",
-    "rootDir": ".",
+    "rootDir": "src",
     "paths": {
-      "lambda-function": ["../lambda-function/src"]
+      "lambda-function": ["../lambda-function/dist"]
     }
   },
-  "include": ["src/**/*", "../lambda-function/src/**/*"]
+  "include": ["src/**/*"]
 }

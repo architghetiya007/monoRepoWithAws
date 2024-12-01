@@ -1,12 +1,18 @@
 {
   "name": "mono-repo",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "eslint packages/**/src --ext .ts"
   },
-  "keywords": [],
-  "author": "Archit Ghetiya",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.16.0"
+  }
 }

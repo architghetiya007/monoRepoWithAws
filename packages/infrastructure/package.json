@@ -6,6 +6,8 @@
     "build": "tsc"
   },
   "dependencies": {
+    "aws-cdk-lib": "^2.171.1",
+    "constructs": "^10.4.2",
     "lambda-function": "file:../lambda-function"
   },
   "devDependencies": {

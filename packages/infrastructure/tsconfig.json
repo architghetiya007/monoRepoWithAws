@@ -4,7 +4,11 @@
     "module": "commonjs",
     "outDir": "dist",
     "strict": true,
-    "rootDir": "src"
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "lambda-function": ["../lambda-function/src"]
+    }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "../lambda-function/src/**/*"]
 }
